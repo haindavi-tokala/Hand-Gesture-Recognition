@@ -8,11 +8,6 @@ import numpy as np
 
 data_dict = pickle.load(open('./data.pickle', 'rb'))
 
-sequences = data_dict['data']
-
-# Print out the lengths of each sequence
-for i, seq in enumerate(sequences):
-    print(f"Sequence {i + 1}: Length = {len(seq)}")
 
 data = np.asarray(data_dict['data'])
 labels = np.asarray(data_dict['labels'])
